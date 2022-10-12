@@ -1,6 +1,6 @@
 import React from "react";
-
 const TeamMemberCard = ({ employee, handleCardClick, selectedTeam }) => {
+
   return (
     <div
       key={employee.id}
@@ -14,9 +14,9 @@ const TeamMemberCard = ({ employee, handleCardClick, selectedTeam }) => {
     >
       {/* logic for gender can be omitted, the images are in constant folder */}
       {employee.gender === "male" ? (
-        <img src={employee.img} className="img-responsive" />
+        <img alt='personImage' src={employee.img} className="img-responsive" />
       ) : (
-        <img src={employee.img} className="img-responsive" />
+        <img alt='personImage' src={employee.img} className="img-responsive" />
       )}
       <div className="card-body">
         <h5 className="card-title mt-5">
