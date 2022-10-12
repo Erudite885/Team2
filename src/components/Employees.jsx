@@ -15,7 +15,7 @@ const Employees = ({employees, selectedTeam, handleCardClick, handleTeamChange})
       </div>
 
       <div className="flex flex-row justify-center items-center">
-        <div className=" columns-1 ss:columns-2 md:columns-3">
+        <div className="grid sm:grid-cols-3 sm:gap-5 md:grid-cols-4 md:gap-6 ">
             <TeamMembers
               employees={employees}
               selectedTeam={selectedTeam}
